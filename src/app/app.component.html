@@ -1,21 +1,4 @@
-<div class="container">
-  <div class="todo-list">
-    <div class="input-group">
-      <input type="text" placeholder="Todo" #newTask>
-      <button class="add-button" (click)="sayHello(newTask.value)">+</button>
-    </div>
-    <table>
-
-      <tr *ngFor="let task of tasks;let i=index;" [class]=" i % 2 == 0?'even':'odd'">
-        <td>
-          <pre>{{task}}</pre>
-        </td>
-        <td>
-          <button class="remove-button">X</button>
-          <button class="done-button">Done</button>
-        </td>
-      </tr>
-
-    </table>
-  </div>
-</div>
+<header>{{title}}</header>
+<body>
+  <app-task-list></app-task-list>
+</body>
